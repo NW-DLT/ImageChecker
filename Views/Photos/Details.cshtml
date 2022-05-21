@@ -1,0 +1,30 @@
+﻿@model IT_StudioTestTask.Models.Photos
+
+@{
+    ViewData["Title"] = "Сохранение";
+}
+
+<h1>Сохранено в base2</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Disription)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Disription)
+        </dd>
+        <img src="~/Images/@Model.ImageSrc"/>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CopyCheck)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CopyCheck)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

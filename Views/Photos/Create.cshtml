@@ -1,0 +1,33 @@
+﻿@model IT_StudioTestTask.Models.Photos
+
+@{
+    ViewData["Title"] = "Загрузить фото";
+}
+
+<h1>Загрузить фото</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Disription" class="control-label"></label>
+                <input asp-for="Disription" class="form-control" />
+                <span asp-validation-for="Disription" class="text-danger"></span>
+            </div>
+            <div class="form-control">
+                <label asp-for="Image" class="control-label"></label>
+                <input asp-for="Image" class="form-control" accept=".jpg,.png"/>
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Загрузить" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

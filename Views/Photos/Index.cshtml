@@ -1,0 +1,59 @@
+﻿@model IEnumerable<IT_StudioTestTask.Models.Photos>
+
+@{
+    ViewData["Title"] = "Список фото";
+}
+
+<h1>Список фото</h1>
+
+<p>
+    <a asp-action="Create">Загрузить фото</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Disription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.uploadTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CopyCheck)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Disription)
+            </td>
+            <td>
+                <img src="~/Images/@item.ImageSrc" class="rounded-circle" width="40" height="40" >
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.uploadTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CopyCheck)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Редактировать</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Сохранить в base2</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Удалить</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
