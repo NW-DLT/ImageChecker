@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "w/mOiH3eVqjjEaZiXmheQUNDPxWd5rfTAp7c0eYnAW4=",
+  "Hash": "tPDeWJJytCKtTsVoCgRHqwntC+1byRGvNltvdO35uJ8=",
   "Source": "IT-StudioTestTask",
   "BasePath": "_content/IT-StudioTestTask",
   "Mode": "Default",
@@ -83,23 +83,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "C:\\Users\\NW_DLT\\source\\repos\\IT-StudioTestTask\\wwwroot\\Images\\загружено.jpg",
-      "SourceId": "IT-StudioTestTask",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\NW_DLT\\source\\repos\\IT-StudioTestTask\\wwwroot\\",
-      "BasePath": "_content/IT-StudioTestTask",
-      "RelativePath": "Images/загружено.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\загружено.jpg"
     },
     {
       "Identity": "C:\\Users\\NW_DLT\\source\\repos\\IT-StudioTestTask\\wwwroot\\js\\site.js",
